@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodie Hunter | Home</title>
+  <script  defer src="./home.js"></script>
+  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div id="menu">
+    <div class="nav-bar">
+        <div class="title">
+          <img src="/images/foodie hunter.png" alt="Foodie Hunter Logo" />
+        </div>
+        
+        <div class="nav-center">
+          <div class="menu-item">
+            <a href="Home.html">Home</a>
+            <a href="./pages/aboutus.html">About Us</a>
+            <a href="./pages/services.html">Services</a>
+            <a href="./pages/contact.html">Contact Us</a>
+          </div>
+        </div>
+      
+        <div class="nav-auth">
+          <button class="auth-btn" id="signup-btn">Sign Up</button>
+          <button class="auth-btn" id="login-btn">Login</button>
+          <span id="username-display" style="display: none; color: #ff6600; font-weight: bold;"></span>
+        </div>
+      </div>
+      
+
+  <!-- Home Page Content -->
+  <section class="home-section">
+    <div class="home-content">
+      <h1>Welcome to Foodie Hunter</h1>
+      <p>Delicious moments delivered to your doorstep</p>
+      <a href="menu.html" class="start-btn">Explore Menu</a>
+    </div>
+  </section>
+  <!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('signup-modal')">&times;</span>
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('login-modal')">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
